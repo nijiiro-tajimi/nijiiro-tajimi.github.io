@@ -75,7 +75,7 @@ a{color:#C21F62}a:hover{color:#8E1446}
 .about-block{position:absolute;right:-28px;bottom:-28px;width:58%;height:58%;border-radius:32px;background:#19B5B0;z-index:-1}
 .about-logo{position:absolute;left:-36px;top:-36px;width:150px;height:150px;border-radius:50%;background:#fff;box-shadow:0 18px 40px -16px rgba(59,37,23,.35);overflow:hidden}
 .about-logo img{width:100%;height:100%;object-fit:cover}
-.bigkanji{position:absolute;right:2%;top:40px;font-family:"Yuji Syuku",serif;font-size:300px;line-height:1;color:rgba(59,37,23,.05);pointer-events:none}
+.bigkanji{position:absolute;right:2%;top:40px;font-family:"Yuji Syuku",serif;font-size:300px;line-height:1;color:rgba(226,60,128,.16);pointer-events:none;transform-origin:50% 90%;animation:niji-pop 3.6s ease-in-out infinite,niji-color 10.8s steps(1) infinite}@keyframes niji-pop{0%,62%,100%{transform:translateY(0) scale(1)}70%{transform:translateY(-22px) scale(1.06,.96)}78%{transform:translateY(0) scale(.97,1.03)}84%{transform:translateY(-8px) scale(1.02)}90%{transform:translateY(0) scale(1)}}@keyframes niji-color{0%{color:rgba(226,60,128,.16)}33.33%{color:rgba(255,200,20,.26)}66.66%{color:rgba(25,181,176,.2)}}@media (prefers-reduced-motion:reduce){.bigkanji{animation:none}}
 .colors{display:flex;gap:10px;margin-top:36px;flex-wrap:wrap}
 .colors span{font-size:13px;font-weight:700;padding:8px 16px;border-radius:999px}
 /* reason */
