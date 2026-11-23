@@ -271,7 +271,7 @@ a{color:#C21F62}a:hover{color:#8E1446}
 .ymark{grid-row:span 2}
 .yk{font-size:200px}
 .tframe{margin:0 18px}
-.tname{font-size:30px}
+.tname{font-size:30px}.tname small{display:block;margin:8px 0 0}
 .quote{font-size:18px}
 .pbox{padding:30px 24px;border-radius:24px}
 .prow .v{font-size:24px}
