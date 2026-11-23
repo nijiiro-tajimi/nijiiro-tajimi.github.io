@@ -14,7 +14,7 @@
 body{margin:0;background:#FAF6EE}
 *{box-sizing:border-box}
 a{color:#C21F62}a:hover{color:#8E1446}
-.site{container-type:inline-size;container-name:site;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;color:#3B2517;background:#FAF6EE;line-height:1.9;letter-spacing:.04em;overflow:hidden}
+.site{container-type:inline-size;container-name:site;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;color:#3B2517;background:#FAF6EE;line-height:1.9;letter-spacing:.04em;overflow-x:clip}
 .wrap{max-width:1200px;margin:0 auto;padding:0 48px}
 .en{font-family:"Outfit",sans-serif;font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:14px;display:inline-flex;align-items:center;gap:12px}
 .en::before{content:"";width:28px;height:4px;border-radius:4px;background:linear-gradient(90deg,#E23C80 0 33%,#FFC814 33% 66%,#19B5B0 66%)}
@@ -302,12 +302,17 @@ a{color:#C21F62}a:hover{color:#8E1446}
 .fq{list-style:none}.fq::-webkit-details-marker{display:none}
 .fq .pm{color:#3B2517}
 details[open] .fq .pm{transform:rotate(45deg);background:#3B2517;color:#fff}
+.drawer[hidden]{display:none!important}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
 </style>
 <style>
 /* v2: 読み進める工夫 */
-.prog{position:fixed;left:0;top:0;height:5px;width:100%;z-index:100;pointer-events:none;background:rgba(59,37,23,.06)}
-.prog i{display:block;height:100%;width:0;background:linear-gradient(90deg,#E23C80 0 33.3%,#FFC814 33.3% 66.6%,#19B5B0 66.6%);background-size:100vw 100%;border-radius:0 4px 4px 0}
+.prog{position:fixed;left:0;top:0;height:10px;width:100%;z-index:100;pointer-events:none;background:#EDE4D3;box-shadow:0 1px 0 rgba(59,37,23,.15)}
+.prog i{display:block;position:relative;height:100%;width:0;background:linear-gradient(90deg,#E23C80 0 33.3%,#FFC814 33.3% 66.6%,#19B5B0 66.6%);background-size:100vw 100%;border-radius:0 10px 10px 0;transition:width .15s linear}
+.prog i::after{content:"";position:absolute;right:-6px;top:50%;width:18px;height:18px;margin-top:-9px;border-radius:50%;background:#3B2517;border:3px solid #fff;box-shadow:0 2px 6px rgba(59,37,23,.35)}
+.prog b{position:absolute;right:12px;top:14px;font:700 11px/1 "Outfit",sans-serif;letter-spacing:.1em;color:#fff;background:#3B2517;padding:5px 9px;border-radius:999px;opacity:0;transition:opacity .3s}
+.prog.on b{opacity:1}
+.hd{top:10px}
 .ei{position:fixed;right:24px;bottom:24px;z-index:90;width:210px;background:#fff;border-radius:28px;padding:18px 18px 20px;box-shadow:0 24px 50px -20px rgba(59,37,23,.45);border:2px solid #3B2517;text-align:center;font-family:"Zen Kaku Gothic New",sans-serif;color:#3B2517;transition:transform .4s,opacity .4s}
 .ei.hide{opacity:0;transform:translateY(30px);pointer-events:none}
 .ei-svg{width:120px;height:120px;display:block;margin:0 auto;background:
@@ -324,6 +329,9 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}
 .ei .btn{min-height:44px;padding:0 16px;font-size:13px;margin-top:10px;width:100%;box-shadow:0 4px 0 #9E1550}
 .mbar{display:none}
 @media (max-width:760px){
+ .prog b{display:none}
+ .prog{height:8px}
+ .hd{top:8px}
  .ei{display:none}
  .mbar{display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:90;background:#3B2517;color:#fff;border-radius:20px;padding:8px 8px 8px 10px;align-items:center;gap:10px;box-shadow:0 16px 30px -12px rgba(0,0,0,.45);transition:transform .4s}
  .mbar.hide{transform:translateY(130%)}
@@ -753,7 +761,7 @@ b.addEventListener('click',()=>{const o=d.hidden;d.hidden=!o;b.setAttribute('ari
 d.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{d.hidden=true;b.setAttribute('aria-expanded',false);}));
 </script>
 
-<div class="prog" aria-hidden="true"><i id="progbar"></i></div>
+<div class="prog" id="prog" aria-hidden="true"><i id="progbar"></i><b id="progpct">0%</b></div>
 <aside class="ei hide" id="ei" aria-label="読み進めると「永」の字が完成します">
   <svg class="ei-svg" viewBox="0 0 100 100" fill="none" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path class="g" d="M47 10 L55 20"/>
 <path class="g" d="M30 30 L54 30 L54 88 L45 81"/>
@@ -790,6 +798,8 @@ d.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{d.hidden=true
   const max=document.documentElement.scrollHeight-innerHeight;
   const p=max>0?Math.min(1,scrollY/max):0;
   bar.style.width=(p*100)+'%';
+  document.getElementById('progpct').textContent='よんだ '+Math.round(p*100)+'%';
+  document.getElementById('prog').classList.toggle('on',scrollY>40);
   const show=scrollY>hero.offsetHeight*0.6;
   ei.classList.toggle('hide',!show); mb.classList.toggle('hide',!show);
   // ヒーローを過ぎてから最後までで5画を書く

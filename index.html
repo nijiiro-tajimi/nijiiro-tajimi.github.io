@@ -13,7 +13,7 @@
 body{margin:0;background:#FAF6EE}
 *{box-sizing:border-box}
 a{color:#C21F62}a:hover{color:#8E1446}
-.site{container-type:inline-size;container-name:site;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;color:#3B2517;background:#FAF6EE;line-height:1.9;letter-spacing:.04em;overflow:hidden}
+.site{container-type:inline-size;container-name:site;font-family:"Zen Kaku Gothic New",system-ui,sans-serif;color:#3B2517;background:#FAF6EE;line-height:1.9;letter-spacing:.04em;overflow-x:clip}
 .wrap{max-width:1200px;margin:0 auto;padding:0 48px}
 .en{font-family:"Outfit",sans-serif;font-weight:600;letter-spacing:.18em;text-transform:uppercase;font-size:14px;display:inline-flex;align-items:center;gap:12px}
 .en::before{content:"";width:28px;height:4px;border-radius:4px;background:linear-gradient(90deg,#E23C80 0 33%,#FFC814 33% 66%,#19B5B0 66%)}
@@ -301,6 +301,7 @@ a{color:#C21F62}a:hover{color:#8E1446}
 .fq{list-style:none}.fq::-webkit-details-marker{display:none}
 .fq .pm{color:#3B2517}
 details[open] .fq .pm{transform:rotate(45deg);background:#3B2517;color:#fff}
+.drawer[hidden]{display:none!important}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
 </style>
 </head>
