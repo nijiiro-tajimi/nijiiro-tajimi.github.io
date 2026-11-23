@@ -289,3 +289,5 @@ a{color:#C21F62}a:hover{color:#8E1446}
 details[open] .fq .pm{transform:rotate(45deg);background:#3B2517;color:#fff}
 .drawer[hidden]{display:none!important}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
+.ig-feed{margin-top:24px;border-radius:10px;overflow:hidden}
+.ig-top .btn{white-space:nowrap;flex-shrink:0}
