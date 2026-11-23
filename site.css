@@ -292,3 +292,7 @@ details[open] .fq .pm{transform:rotate(45deg);background:#3B2517;color:#fff}
 html{scroll-behavior:smooth;scroll-padding-top:90px}
 .ig-feed{margin-top:24px;border-radius:10px;overflow:hidden}
 .ig-top .btn{white-space:nowrap;flex-shrink:0}
+.trial-vid{margin:28px 0 0;max-width:420px;background:#fff;border-radius:28px;padding:10px;box-shadow:0 24px 50px -28px rgba(59,37,23,.5)}
+.trial-vid video{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:20px}
+.trial-vid figcaption{color:#3B2517;font-size:14px;line-height:1.7;padding:12px 8px 6px}
+.trial-vid figcaption b{display:block;color:#D9266E;font-size:13px;letter-spacing:.08em}
