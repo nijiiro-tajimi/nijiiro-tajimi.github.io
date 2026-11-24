@@ -296,3 +296,9 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}
 .trial-vid video{display:block;width:100%;aspect-ratio:1;object-fit:cover;border-radius:20px}
 .trial-vid figcaption{color:#3B2517;font-size:14px;line-height:1.7;padding:12px 8px 6px}
 .trial-vid figcaption b{display:block;color:#D9266E;font-size:13px;letter-spacing:.08em}
+.h1 .m .hop{display:inline-block;animation:kaketa 4s ease-in-out 1.7s infinite}
+.h1 .m .hop:nth-child(2){animation-delay:1.82s}
+.h1 .m .hop:nth-child(3){animation-delay:1.94s}
+.h1 .m .hop:nth-child(4){animation-delay:2.06s}
+@keyframes kaketa{0%,22%,100%{transform:none}7%{transform:translateY(-16px) rotate(-6deg)}14%{transform:translateY(2px)}18%{transform:none}}
+@media (prefers-reduced-motion:reduce){.h1 .m .hop{animation:none}}
