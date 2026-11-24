@@ -315,3 +315,4 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}
 .otona-img{aspect-ratio:16/9}.csub.one .otona-img{aspect-ratio:3/1;object-position:center 40%}.csub.one .mini2{display:grid;grid-template-columns:1fr 1fr;gap:0 48px}@container site (max-width: 760px){.csub.one .otona-img{aspect-ratio:16/9}.csub.one .mini2{grid-template-columns:1fr}}
 .cfeat.noimg{grid-template-columns:1fr}
 .enp-banner{background:#F4F3EE;display:flex;justify-content:center}.enp-banner img{width:100%;max-width:720px;height:auto;display:block}
+.plist .pcard p{color:inherit}
