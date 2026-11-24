@@ -304,3 +304,7 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}
 @media (max-width:600px){.bigkanji{font-size:120px;top:4px}}
 .plist{align-items:stretch}
 .plist .pcard{margin-bottom:0}
+.ph.has-mascot{overflow:visible}
+.ph.has-mascot>img:first-child{border-radius:inherit}
+.ph img.mascot{inset:auto;right:-18px;bottom:-26px;width:30%;max-width:170px;height:auto;object-fit:contain;filter:drop-shadow(0 10px 14px rgba(59,37,23,.28));z-index:2}
+@media (max-width:600px){.ph img.mascot{right:-4px;bottom:-18px;width:32%}}
