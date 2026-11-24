@@ -302,3 +302,4 @@ html{scroll-behavior:smooth;scroll-padding-top:90px}
 .h1 .m .hop:nth-child(4){animation-delay:2.06s}
 @keyframes kaketa{0%,22%,100%{transform:none}7%{transform:translateY(-16px) rotate(-6deg)}14%{transform:translateY(2px)}18%{transform:none}}
 @media (prefers-reduced-motion:reduce){.h1 .m .hop{animation:none}}
+@media (max-width:600px){.bigkanji{font-size:120px;top:4px}}
