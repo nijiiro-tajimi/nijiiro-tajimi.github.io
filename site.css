@@ -118,7 +118,7 @@ a{color:#C21F62}a:hover{color:#8E1446}
 /* year */
 .year{background:#FFC814;padding:140px 0;position:relative;overflow:hidden}
 .year .en::before{background:#3B2517}
-.yrow{margin-top:72px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;position:relative}
+.yrow{margin-top:72px;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;position:relative}
 .yrow::before{content:"";position:absolute;left:0;right:0;top:44px;height:4px;background:#3B2517;border-radius:4px}
 .ystep{padding-right:32px;position:relative}
 .ymark{width:92px;height:92px;border-radius:50%;background:#fff;border:4px solid #3B2517;display:flex;align-items:center;justify-content:center;font-family:"Outfit";font-weight:700;font-size:22px;position:relative;z-index:1;transition:transform .3s}
