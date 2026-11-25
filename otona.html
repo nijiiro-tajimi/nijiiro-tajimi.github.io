@@ -211,6 +211,24 @@
   .adult .bigcta{font-size:34px}
   .adult .price{font-size:44px}
 }
+
+/* こんな方を：白い面＋キーワード（2026-11-25 22:50） */
+.adult .fw-list{gap:20px;margin-top:64px}
+.adult .fw-list li{background:#fff;border:0;border-radius:0;padding:36px 40px 38px;font-size:18px;letter-spacing:.06em;line-height:1.75}
+.adult .fw-list li:nth-last-child(-n+2){border-bottom:0}
+.adult .fw-key{display:flex;align-items:center;gap:12px;font-family:"Zen Kaku Gothic New",sans-serif;font-weight:500;font-size:12.5px;letter-spacing:.2em;color:var(--sage-d);margin-bottom:16px}
+.adult .fw-key::before{content:"";width:28px;height:1px;background:var(--sal)}
+.adult .fw-list li small{margin-top:12px;font-size:14px;line-height:1.9}
+.adult .fw-not{margin:64px auto 0;max-width:none;text-align:center;font-family:"Shippori Mincho",serif;font-weight:500;font-size:20px;letter-spacing:.1em;line-height:1.9;color:var(--ink)}
+.adult .fw-not::before,.adult .fw-not::after{content:"";display:inline-block;width:40px;height:1px;background:var(--sal);vertical-align:middle;margin:0 20px}
+@media (max-width:760px){
+  .adult .fw-list{gap:12px;margin-top:40px}
+  .adult .fw-list li{padding:26px 24px 28px;font-size:16px}
+  .adult .fw-list li:nth-last-child(2){border-bottom:0}
+  .adult .fw-key{margin-bottom:12px}
+  .adult .fw-not{font-size:16px;text-align:left;margin-top:40px}
+  .adult .fw-not::before,.adult .fw-not::after{display:none}
+}
 </style>
 </head>
 <body>
@@ -249,9 +267,9 @@
 <section class="hero" id="top">
   <div class="hero-grid">
     <div>
-      <span class="kicker"><i class="dot"></i>大人のお稽古｜オンラインで全国から</span>
+      <span class="kicker"><i class="dot"></i>大人のお稽古｜教室でも、オンラインでも</span>
       <h1 class="h1">上手な字より、<br>自分の<span class="m">好きな字</span>へ。</h1>
-      <p class="hero-p">あなたの字のクセから、どうしたらもっと書きやすく、もっと好きな字になるかを一緒に考えます。<br>急がず、自分と向き合う時間として、長く楽しめる書の習いごとです。</p>
+      <p class="hero-p">まずはお手本で、字の基本の形を身につけます。そこから少しずつ、書きやすく、自分らしい好きな字へ。<br>一朝一夕にはいかない道のりだからこそ、その過程を楽しみながらお稽古します。</p>
       <div class="hero-cta">
         <a class="btn btn-p" href="#contact">お試し添削（500円）を申し込む<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
         <a class="btn btn-o" href="#course">コースを見る</a>
@@ -269,17 +287,17 @@
   <div class="wrap">
     <div class="rv">
       <span class="en">For You</span>
-      <h2 class="h2">こんな方に<br>来ていただいています</h2>
+      <h2 class="h2">こんな方を<br>お待ちしています</h2>
     </div>
     <ul class="fw-list">
-      <li class="rv">子どものころ習っていて、もう一度はじめたい<small>ブランクがあっても大丈夫。手が思い出すところから始めます。</small></li>
-      <li class="rv">自分の字に、ちょっと自信がない<small>のし袋、手紙、書類の名前。人前で書く字を整えたい方へ。</small></li>
-      <li class="rv">趣味として、長く続けられることを探している<small>級が上がる楽しみがあるので、続けるほど面白くなります。</small></li>
-      <li class="rv">忙しい毎日に、自分と向き合う時間がほしい<small>一文字ずつ書く時間は、心がしずかに整う時間です。</small></li>
-      <li class="rv">お手本どおりより、「自分の好きな字」を書きたい<small>正しい形を土台に、あなたらしい字を一緒に探します。</small></li>
-      <li class="rv">ゆくゆくは段や師範もめざしてみたい<small>日本習字の検定で、段位・師範まで道がつながっています。</small></li>
+      <li class="rv"><span class="fw-key">もう一度</span>子どものころ習っていて、もう一度はじめたい<small>ブランクがあっても大丈夫。手はちゃんと覚えています。</small></li>
+      <li class="rv"><span class="fw-key">人前で書く字</span>自分の字に、ちょっと自信がない<small>のし袋、手紙、書類の名前。人前で書く字を整えたい方。</small></li>
+      <li class="rv"><span class="fw-key">一生の趣味</span>趣味として、長く続けられることを探している<small>何歳からでも、一生続けられる習いごと。毎月の課題が、続ける張り合いになります。</small></li>
+      <li class="rv"><span class="fw-key">自分の時間</span>忙しい毎日に、自分と向き合う時間がほしい<small>文字を書く時間は、心がしずかに整う時間です。</small></li>
+      <li class="rv"><span class="fw-key">自分の字</span>お手本で基本を身につけ、その先の「自分の好きな字」を目指したい<small>正しい形を土台に、あなたらしい字を見つける力を育てます。</small></li>
+      <li class="rv"><span class="fw-key">段位・師範</span>ゆくゆくは段や師範もめざしてみたい<small>日本習字の検定で、段位・師範まで道がつながっています。</small></li>
     </ul>
-    <p class="fw-not rv">「とにかく最短で」よりも、書くこと自体を楽しみながら、少しずつ上達していきたい方に向いている教室です。</p>
+    <p class="fw-not rv">書くこと自体を楽しみながら、少しずつ上達していきたい方に向いている教室です。</p>
   </div>
 </section>
 
