@@ -229,6 +229,270 @@
   .adult .fw-not{font-size:16px;text-align:left;margin-top:40px}
   .adult .fw-not::before,.adult .fw-not::after{display:none}
 }
+
+/* こんな方を：コンパクトに（2026-11-25 23:25） */
+.adult .fw-list{gap:16px;margin-top:56px}
+.adult .fw-list li{padding:28px 32px 30px;line-height:1.6}
+.adult .fw-key{margin-bottom:10px}
+.adult .fw-list li small{margin-top:8px;line-height:1.7}
+.adult .fw-not{margin-top:48px}
+.adult .forwho{padding-bottom:100px}
+/* つなぎの帯 */
+.adult .a-bridge{position:relative;overflow:hidden;color:#fff;padding:120px 0;background:#1F1C1A}
+.adult .a-bridge-bg{position:absolute;inset:0;background:url(img/brush-inkstone.jpg) center 40%/cover no-repeat;opacity:.55}
+.adult .a-bridge::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,18,16,.85) 0%,rgba(20,18,16,.35) 60%,rgba(20,18,16,.1) 100%);pointer-events:none}
+.adult .a-bridge-in{position:relative;z-index:1}
+.adult .a-bridge .en{color:rgba(255,255,255,.7)}
+.adult .a-bridge-main{font-family:"Shippori Mincho",serif;font-weight:500;font-size:44px;line-height:1.6;letter-spacing:.12em;margin:18px 0 0}
+.adult .a-bridge-sub{margin:24px 0 0;font-size:15px;line-height:2;letter-spacing:.12em;color:rgba(255,255,255,.85)}
+.adult .a-bridge-down{display:inline-flex;flex-direction:column;align-items:flex-start;gap:14px;margin-top:40px;color:#fff;text-decoration:none;font-size:13px;letter-spacing:.24em}
+.adult .a-bridge-down::after{content:"";width:1px;height:56px;background:linear-gradient(var(--sal),transparent);margin-left:6px}
+.adult .a-bridge-cta{display:block;width:max-content;margin-top:28px;color:#fff;font-size:13.5px;letter-spacing:.14em;text-decoration:none;border-bottom:1px solid var(--sal);padding-bottom:6px}
+.adult .a-bridge-cta:hover{color:var(--sal)}
+@media (max-width:760px){
+  .adult .forwho{padding:72px 0}
+  .adult .fw-list{gap:8px;margin-top:28px}
+  .adult .fw-list li{padding:18px 20px 20px;font-size:15.5px;line-height:1.55}
+  .adult .fw-key{margin-bottom:6px;font-size:11.5px}
+  .adult .fw-key::before{width:20px}
+  .adult .fw-list li small{font-size:13px;margin-top:6px;line-height:1.65}
+  .adult .fw-not{margin-top:28px;font-size:15px}
+  .adult .a-bridge{padding:80px 0}
+  .adult .a-bridge-main{font-size:22px;letter-spacing:.08em}
+  .adult .a-bridge-sub{font-size:13.5px;line-height:1.9;letter-spacing:.06em}
+  .adult .a-bridge::after{background:linear-gradient(180deg,rgba(20,18,16,.55),rgba(20,18,16,.85))}
+}
+
+/* はじめる前の3つの不安（2026-11-25 23:30） */
+.adult .fw3-lead{margin:28px 0 0;font-size:15px;line-height:2;color:var(--mute)}
+.adult .fw3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:56px}
+.adult .fw3-card{background:#fff;padding:36px 32px 34px;display:flex;flex-direction:column}
+.adult .fw3-no{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:40px;line-height:1;color:var(--sal)}
+.adult .fw3-q{font-family:"Shippori Mincho",serif;font-weight:500;font-size:24px;letter-spacing:.1em;margin:14px 0 20px;padding-bottom:18px;border-bottom:1px solid var(--line)}
+.adult .fw3-card ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.adult .fw3-card li{position:relative;padding-left:22px;font-size:14.5px;line-height:1.75}
+.adult .fw3-card li::before{content:"";position:absolute;left:0;top:.85em;width:12px;height:1px;background:var(--sage-d)}
+.adult .fw3-link{margin-top:auto;padding-top:22px;align-self:flex-start;color:var(--sal-d);font-size:13.5px;letter-spacing:.12em;text-decoration:none;border-bottom:1px solid var(--sal)}
+@media (max-width:900px){.adult .fw3{grid-template-columns:1fr}}
+@media (max-width:760px){
+  .adult .fw3-lead{font-size:14px;margin-top:18px}
+  .adult .fw3{gap:8px;margin-top:28px}
+  .adult .fw3-card{padding:22px 20px 22px}
+  .adult .fw3-no{font-size:30px}
+  .adult .fw3-q{font-size:19px;margin:8px 0 12px;padding-bottom:12px}
+  .adult .fw3-card ul{gap:8px}
+  .adult .fw3-card li{font-size:13.5px;line-height:1.65;padding-left:18px}
+  .adult .fw3-card li::before{width:10px}
+  .adult .fw3-link{padding-top:14px}
+}
+
+/* 大人の部の3つのお稽古（2026-11-25） */
+.adult .a-lessons{padding:140px 0 120px;background:#fff}
+.adult .a-ls-lead{margin:24px 0 0;font-size:15px;line-height:2;color:var(--mute)}
+.adult .a-ls{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:56px}
+.adult .a-ls-card{display:flex;flex-direction:column;background:var(--gray)}
+.adult .a-ls-ph{position:relative;aspect-ratio:4/3;overflow:hidden}
+.adult .a-ls-ph img{width:100%;height:100%;object-fit:cover;display:block}
+.adult .a-ls-online{position:absolute;left:0;bottom:0;background:var(--sage-d);color:#fff;font-size:12.5px;letter-spacing:.14em;padding:9px 16px}
+.adult .a-ls-body{padding:28px 28px 30px;display:flex;flex-direction:column;flex:1}
+.adult .a-ls-tool{margin:0;font-size:12px;letter-spacing:.2em;color:var(--sage-d);display:flex;align-items:center;gap:10px}
+.adult .a-ls-tool::before{content:"";width:24px;height:1px;background:var(--sal)}
+.adult .a-ls-card h3{font-family:"Shippori Mincho",serif;font-weight:500;font-size:28px;letter-spacing:.14em;margin:12px 0 0}
+.adult .a-ls-catch{margin:10px 0 0;font-family:"Shippori Mincho",serif;font-size:16px;letter-spacing:.08em;color:var(--sal-d)}
+.adult .a-ls-txt{margin:16px 0 0;font-size:14px;line-height:1.85;color:var(--ink)}
+.adult .a-ls-tags{list-style:none;padding:0;margin:auto 0 0;padding-top:20px;display:flex;flex-wrap:wrap;gap:6px}
+.adult .a-ls-tags li{font-size:12px;letter-spacing:.08em;padding:5px 10px;border:1px solid #CFC8BF;color:var(--mute);background:#fff}
+.adult .a-ls-tags li.on{background:var(--sage-d);border-color:var(--sage-d);color:#fff}
+@media (max-width:900px){.adult .a-ls{grid-template-columns:1fr;gap:16px}}
+@media (max-width:760px){
+  .adult .a-lessons{padding:80px 0 72px}
+  .adult .a-ls-lead{font-size:14px;margin-top:16px}
+  .adult .a-ls{margin-top:28px}
+  .adult .a-ls-card{display:grid;grid-template-columns:1fr}
+  .adult .a-ls-ph{aspect-ratio:16/9}
+  .adult .a-ls-body{padding:20px 20px 22px}
+  .adult .a-ls-card h3{font-size:23px;margin-top:8px}
+  .adult .a-ls-catch{font-size:15px;margin-top:6px}
+  .adult .a-ls-txt{font-size:13.5px;line-height:1.75;margin-top:10px}
+  .adult .a-ls-tags{padding-top:14px}
+}
+
+/* ヒーロー → お稽古 のつなぎ（2026-11-25 23:45） */
+.adult .a-lessons{position:relative;padding:0 0 120px;background:#fff}
+.adult .a-lessons::before{content:"";position:absolute;inset:0;background:var(--gray);clip-path:polygon(50% 0,100% 0,100% 100%,0 100%,0 160px,50% 160px);pointer-events:none}
+.adult .a-lessons>*{position:relative}
+.adult .a-ls-head{padding:0 6vw 0 calc(50% + 6vw)}
+.adult .a-ls-head::before{content:"";display:block;width:1px;height:72px;background:linear-gradient(var(--sal),rgba(217,162,140,.2));margin:0 0 28px}
+.adult .a-ls-head .h2{margin:0}
+.adult .a-ls{margin-top:64px}
+.adult .a-ls-card{background:#fff}
+@container site (max-width: 1080px){.adult .a-ls-head{padding-left:calc(50% + 5vw)}}
+@container site (max-width: 760px){
+  .adult .a-lessons{padding:0 0 72px}
+  .adult .a-lessons::before{clip-path:none}
+  .adult .a-ls-head{padding:0 22px}
+  .adult .a-ls-head::before{height:48px;margin-bottom:20px}
+  .adult .a-ls{margin-top:28px}
+}
+
+/* お稽古カードの月謝・お試し帯（2026-11-25 23:55） */
+.adult .a-ls-tags{padding-top:18px}
+.adult .a-ls-fee{margin:16px 0 0;border-top:1px solid var(--line)}
+.adult .a-ls-fee>div{display:grid;grid-template-columns:6.5em 1fr;gap:8px;align-items:baseline;padding:12px 0;border-bottom:1px solid var(--line)}
+.adult .a-ls-fee dt{font-size:12.5px;letter-spacing:.14em;color:var(--mute)}
+.adult .a-ls-fee dd{margin:0;font-family:"Shippori Mincho",serif;font-weight:500;font-size:17px;letter-spacing:.06em;line-height:1.6}
+.adult .a-ls-fee .on dt{color:var(--sage-d);font-weight:500}
+.adult .a-ls-trial{margin-top:40px;background:#fff;border-left:3px solid var(--sal);display:flex;align-items:center;justify-content:space-between;gap:24px;padding:28px 36px}
+.adult .a-ls-trial p{margin:0;display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 16px}
+.adult .a-ls-trial span{font-family:"Shippori Mincho",serif;font-size:18px;letter-spacing:.1em}
+.adult .a-ls-trial b{font-family:"Shippori Mincho",serif;font-weight:500;font-size:26px;color:var(--sal-d);letter-spacing:.06em}
+.adult .a-ls-trial small{flex-basis:100%;font-size:13px;color:var(--mute);letter-spacing:.06em}
+.adult .a-ls-trial .btn{flex-shrink:0}
+.adult .a-event{margin-top:20px;font-size:13.5px;line-height:1.9;color:rgba(255,255,255,.85)}
+.adult .a-event a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+@container site (max-width: 760px){
+  .adult .a-ls-fee>div{padding:10px 0;grid-template-columns:6em 1fr}
+  .adult .a-ls-fee dd{font-size:15.5px}
+  .adult .a-ls-trial{flex-direction:column;align-items:stretch;padding:22px 20px;margin-top:20px}
+  .adult .a-ls-trial b{font-size:22px}
+  .adult .a-ls-trial span{font-size:16px}
+}
+
+.adult .a-ls-headrow{display:flex;align-items:flex-end;gap:40px;flex-wrap:wrap}
+.adult .a-ls-names{list-style:none;margin:0 0 6px;padding:0 0 0 32px;border-left:1px solid #CFC8BF;display:grid;gap:8px}
+.adult .a-ls-names li{font-family:"Shippori Mincho",serif;font-weight:500;font-size:18px;letter-spacing:.16em;color:var(--sal-d)}
+@container site (max-width: 760px){
+  .adult .a-ls-headrow{gap:20px;align-items:center}
+  .adult .a-ls-names{padding-left:20px;margin:0;gap:4px}
+  .adult .a-ls-names li{font-size:15px}
+}
+
+/* お稽古カード：詳細の開閉（2026-11-25 23:58） */
+.adult .a-ls-more{margin-top:14px;border-top:1px solid var(--line)}
+.adult .a-ls-more summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;padding:14px 0 2px;font-size:13px;letter-spacing:.12em;color:var(--sal-d)}
+.adult .a-ls-more summary::-webkit-details-marker{display:none}
+.adult .a-ls-more summary::after{content:"";width:8px;height:8px;border-right:1px solid currentColor;border-bottom:1px solid currentColor;transform:rotate(45deg) translateY(-3px);transition:transform .25s}
+.adult .a-ls-more[open] summary::after{transform:rotate(-135deg) translateY(-1px)}
+.adult .a-ls-detail{margin:14px 0 0;background:var(--gray);padding:14px 16px}
+.adult .a-ls-detail>div{display:grid;grid-template-columns:5.5em 1fr;gap:8px;padding:6px 0;font-size:13px;line-height:1.7}
+.adult .a-ls-detail dt{color:var(--mute);letter-spacing:.1em}
+.adult .a-ls-detail dd{margin:0}
+.adult .a-ls-detail .sub{display:block;font-size:12px;letter-spacing:.2em;color:var(--mute);padding:10px 0 2px;border-bottom:1px solid var(--line);margin-bottom:4px}
+.adult .a-ls-detail .sub:first-child{padding-top:0}
+.adult .a-ls-detail .sub.on{color:var(--sage-d)}
+.adult .tbd{color:#B0574A}
+.adult .a-ls:has(.a-ls-more[open]){align-items:start}
+.adult .a-ls:has(.a-ls-more[open]) .a-ls-tags{margin-top:0}
+
+/* お稽古：書遊（syoyu-e.com/lesson）の動き・余白を参考に（2026-11-26） */
+.adult .a-ls{display:grid;grid-template-columns:1fr;gap:140px;margin-top:96px}
+.adult .a-ls-card{position:relative;display:block;background:none;min-height:560px}
+.adult .a-ls-card .a-ls-ph{position:absolute;top:0;bottom:0;right:0;width:78%;aspect-ratio:auto;max-height:none;overflow:hidden}
+.adult .a-ls-card .a-ls-ph img{position:absolute;inset:-8% 0;width:100%;height:116%;object-fit:cover;will-change:transform}
+.adult .a-ls-card:nth-child(even) .a-ls-ph{right:auto;left:0}
+.adult .a-ls-body{position:relative;z-index:1;width:min(520px,52%);margin:96px 0 96px 0;padding:44px 48px 40px;background:rgba(255,255,255,.94);transition:background-color .6s,transform .2s linear;will-change:transform}
+.adult .a-ls-card:nth-child(even) .a-ls-body{margin-left:auto}
+.adult .a-ls-card .a-ls-online{left:auto;right:0;bottom:0;top:auto}
+.adult .a-ls-card:nth-child(even) .a-ls-online{right:auto;left:0}
+.adult .a-ls-en{display:block;font-family:"Cormorant Garamond",serif;font-weight:300;font-size:22px;letter-spacing:.08em;color:var(--mute);margin-top:6px}
+.adult .a-ls-card h3{margin-top:2px;font-size:32px}
+.adult .a-ls-txt{font-size:14.5px;line-height:2}
+.adult .a-ls-tags{margin-top:0;padding-top:20px}
+.adult .a-ls:has(.a-ls-more[open]){align-items:stretch}
+/* 動き：スクロールで面がふわっと濃くなる */
+.adult .a-ls-card.pre .a-ls-body{background:rgba(255,255,255,.35)}
+@media (prefers-reduced-motion: reduce){.adult .a-ls-body,.adult .a-ls-card .a-ls-ph img{transform:none!important;transition:none}}
+@container site (max-width: 900px){
+  .adult .a-ls{gap:72px}
+  .adult .a-ls-card .a-ls-ph{width:88%}
+  .adult .a-ls-body{width:62%;padding:32px 32px}
+}
+@container site (max-width: 760px){
+  .adult .a-ls{gap:44px;margin-top:32px}
+  .adult .a-ls-card{min-height:0}
+  .adult .a-ls-card .a-ls-ph,.adult .a-ls-card:nth-child(even) .a-ls-ph{position:relative;width:calc(100% + 44px);margin:0 -22px;height:64vw;max-height:360px}
+  .adult .a-ls-body,.adult .a-ls-card:nth-child(even) .a-ls-body{width:auto;margin:-56px 0 0 16px;padding:24px 22px 24px}
+  .adult .a-ls-card:nth-child(even) .a-ls-body{margin:-56px 16px 0 0}
+  .adult .a-ls-card .a-ls-online,.adult .a-ls-card:nth-child(even) .a-ls-online{top:0;bottom:auto;right:0;left:auto}
+  .adult .a-ls-en{font-size:18px}
+  .adult .a-ls-card h3{font-size:24px}
+  .adult .a-ls-txt{font-size:13.5px;line-height:1.85}
+}
+
+/* 3つの不安：問いの文字を横からゆっくり（2026-11-26） */
+.adult .fw3-card{overflow:hidden}
+.adult .fw3-q.slide{opacity:0;transform:translateX(-48px);transition:opacity 1.6s ease-out,transform 1.6s cubic-bezier(.22,.61,.36,1)}
+.adult .fw3-q.slide.in{opacity:1;transform:none}
+.adult .fw3-card:nth-child(2) .fw3-q.slide{transition-delay:.25s}
+.adult .fw3-card:nth-child(3) .fw3-q.slide{transition-delay:.5s}
+@container site (max-width: 900px){.adult .fw3-card:nth-child(n) .fw3-q.slide{transition-delay:0s}}
+@media (prefers-reduced-motion: reduce){.adult .fw3-q.slide{opacity:1;transform:none;transition:none}}
+
+/* お稽古：写真の見どころ（下側）を見せる配置（2026-11-26 0:10） */
+.adult .a-ls-card{min-height:0}
+.adult .a-ls-card .a-ls-ph{bottom:auto;height:500px;width:66%}
+.adult .a-ls-card .a-ls-ph img{inset:-5% 0;height:110%}
+.adult .a-ls-body{width:min(500px,46%);margin:120px 0 0}
+.adult .a-ls-card:nth-child(even) .a-ls-body{margin:120px 0 0 auto}
+@container site (max-width: 900px){
+  .adult .a-ls-card .a-ls-ph{width:80%;height:420px}
+  .adult .a-ls-body{width:58%;margin-top:100px}
+  .adult .a-ls-card:nth-child(even) .a-ls-body{margin-top:100px}
+}
+@container site (max-width: 760px){
+  .adult .a-ls-card .a-ls-ph,.adult .a-ls-card:nth-child(even) .a-ls-ph{height:70vw;max-height:380px;width:calc(100% + 44px)}
+  .adult .a-ls-body,.adult .a-ls-card:nth-child(even) .a-ls-body{width:auto}
+  .adult .a-ls-body{margin:-28px 0 0 28px}
+  .adult .a-ls-card:nth-child(even) .a-ls-body{margin:-28px 28px 0 0}
+}
+
+/* ===== 2026-11-26 組み直し：心もととのう／受け方タブ／イベント ===== */
+.adult .a-kk-lead{margin:28px 0 0;font-size:15px;line-height:2;color:var(--mute)}
+.adult .a-kk{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:56px}
+.adult .a-kk-item{background:rgba(255,255,255,.82);padding:40px 36px 38px}
+.adult .a-kk-no{font-family:"Cormorant Garamond",serif;font-weight:300;font-size:40px;line-height:1;color:var(--sal)}
+.adult .a-kk-item h3{font-family:"Shippori Mincho",serif;font-weight:500;font-size:23px;letter-spacing:.1em;line-height:1.6;margin:14px 0 16px;padding-bottom:16px;border-bottom:1px solid var(--line)}
+.adult .a-kk-item p{margin:0;font-size:15px;line-height:2}
+.adult .a-kk-item p+p{margin-top:8px}
+.adult .a-kk-item .alt{display:block;margin-top:10px;font-size:12.5px;color:var(--mute);line-height:1.7}
+.adult .a-howto-tabs{display:flex;gap:8px;margin-top:48px;border-bottom:1px solid #CFC8BF}
+.adult .a-howto-tabs button{appearance:none;border:0;background:none;font:inherit;font-family:"Shippori Mincho",serif;font-size:18px;letter-spacing:.1em;padding:14px 22px;color:var(--mute);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px}
+.adult .a-howto-tabs button[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--sal-d)}
+.adult .a-howto-tabs small{font-size:12px;margin-left:4px}
+.adult .a-howto-panel[hidden]{display:none}
+.adult .a-howto-panel .lead{margin-top:28px}
+.adult .a-howto-panel .yrow{margin-top:48px}
+.adult .a-howto-panel.on .yrow{grid-template-columns:repeat(4,minmax(0,1fr))}
+.adult .a-howto-note{margin:48px 0 0;padding:22px 26px;background:#fff;font-size:14.5px;line-height:1.9}
+.adult .a-howto-note b{font-family:"Shippori Mincho",serif;font-weight:500;margin-right:10px}
+.adult .a-ev{padding:140px 0;background:var(--gray)}
+.adult .a-ev-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:56px}
+.adult .a-ev-card{background:#fff;padding:36px 32px}
+.adult .a-ev-card h3{font-family:"Shippori Mincho",serif;font-weight:500;font-size:22px;letter-spacing:.1em;margin:12px 0 14px}
+.adult .a-ev-card p{margin:0;font-size:14.5px;line-height:1.9}
+.adult .a-ev-tags{display:flex;gap:6px;flex-wrap:wrap;list-style:none;padding:0;margin:0}
+.adult .a-ev-tags li{font-size:12px;letter-spacing:.1em;padding:3px 10px;border:1px solid var(--line)}
+.adult .a-ev-more{margin:32px 0 0;font-size:14px;line-height:1.9;color:var(--mute)}
+.adult .a-ev-more a{color:var(--sal-d)}
+@media (max-width:1000px){.adult .a-kk{grid-template-columns:1fr}}
+@media (max-width:900px){.adult .a-ev-grid{grid-template-columns:1fr}}
+@media (max-width:760px){
+  .adult .a-kk-lead{font-size:14px;margin-top:18px}
+  .adult .a-kk{gap:8px;margin-top:28px}
+  .adult .a-kk-item{padding:24px 20px}
+  .adult .a-kk-no{font-size:30px}
+  .adult .a-kk-item h3{font-size:19px;margin:8px 0 12px;padding-bottom:12px}
+  .adult .a-kk-item p{font-size:14px;line-height:1.85}
+  .adult .a-howto-tabs{margin-top:28px}
+  .adult .a-howto-tabs button{font-size:16px;padding:12px 8px;flex:1;letter-spacing:.06em;line-height:1.4}
+  .adult .a-howto-tabs small{display:block;margin:2px 0 0;font-size:11px}
+  .adult .a-howto-panel.on .yrow{grid-template-columns:1fr}
+  .adult .a-howto-panel .yrow{margin-top:32px}
+  .adult .a-howto-note{margin-top:32px;padding:18px 18px;font-size:13.5px}
+  .adult .a-ev{padding:72px 0}
+  .adult .a-ev-grid{gap:8px;margin-top:28px}
+  .adult .a-ev-card{padding:24px 20px}
+}
 </style>
 </head>
 <body>
@@ -241,22 +505,22 @@
       <span><b>日本習字 にじいろ教室</b></span>
     </a>
     <nav class="nav" aria-label="大人の部メニュー">
-      <a href="#forwho">こんな方に</a>
+      <a href="#lessons">お稽古と月謝</a>
+      <a href="#kokoro">心もととのう</a>
       <a href="#reason">教え方</a>
-      <a href="#course">コース</a>
-      <a href="#flow">添削の流れ</a>
-      <a href="#price">料金</a>
+      <a href="#flow">受け方</a>
+      <a href="#events">イベント</a>
       <a href="#faq">よくある質問</a>
     </nav>
     <a class="btn btn-p" href="#contact">お試し添削を申し込む</a>
     <button class="burger" type="button" aria-label="メニューを開く" aria-expanded="false" id="burger"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3B2517" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"></path></svg></button>
   </div>
   <nav class="drawer" id="drawer" hidden aria-label="スマートフォン用メニュー">
-    <a href="#forwho">こんな方に</a>
+    <a href="#lessons">お稽古と月謝</a>
+    <a href="#kokoro">心もととのう</a>
     <a href="#reason">教え方</a>
-    <a href="#course">コース</a>
-    <a href="#flow">添削の流れ</a>
-    <a href="#price">料金</a>
+    <a href="#flow">受け方</a>
+    <a href="#events">イベント</a>
     <a href="#faq">よくある質問</a>
     <a href="index.html">教室トップ（幼児・小学・中学部）</a>
     <a class="btn btn-y" href="#contact" style="margin-top: 20px; border: 0; padding: 0 30px">お試し添削を申し込む</a>
@@ -272,7 +536,7 @@
       <p class="hero-p">まずはお手本で、字の基本の形を身につけます。そこから少しずつ、書きやすく、自分らしい好きな字へ。<br>一朝一夕にはいかない道のりだからこそ、その過程を楽しみながらお稽古します。</p>
       <div class="hero-cta">
         <a class="btn btn-p" href="#contact">お試し添削（500円）を申し込む<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-        <a class="btn btn-o" href="#course">コースを見る</a>
+        <a class="btn btn-o" href="#lessons">お稽古を見る</a>
       </div>
     </div>
     <div class="a-hero-vis">
@@ -282,22 +546,122 @@
   </div>
 </section>
 
-<!-- FOR WHO -->
-<section class="forwho" id="forwho">
+<!-- LESSONS：大人の部の3つのお稽古（2026-11-25） -->
+<section class="a-lessons" id="lessons">
+  <div class="a-ls-head rv">
+    <div class="a-ls-headrow">
+      <h2 class="h2">大人の部の<br>3つのお稽古</h2>
+      <ul class="a-ls-names"><li>漢字部</li><li>ペン部</li><li>くらしの書</li></ul>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="a-ls">
+      <article class="a-ls-card rv">
+        <div class="a-ls-ph"><img src="img/brush-wide.jpg" alt="筆で大きな字を書いているところ" loading="lazy" style="object-position:0% 88%"></div>
+        <div class="a-ls-body">
+          <p class="a-ls-tool">毛筆</p>
+          <span class="a-ls-en">Kanji</span><h3>漢字部</h3>
+          <p class="a-ls-catch">筆で、基本から作品まで。</p>
+          <p class="a-ls-txt">楷書・行書・草書など、漢字の五つの書体を基礎から学びます。段位が上がると、掛け軸のような大きな作品（条幅）にも挑戦できます。</p>
+          <ul class="a-ls-tags"><li>段位・師範まで</li></ul>
+          <dl class="a-ls-fee"><div><dt>教室</dt><dd>月5,500円</dd></div></dl>
+          <details class="a-ls-more">
+            <summary>詳細を見る</summary>
+            <dl class="a-ls-detail">
+              <div><dt>お稽古</dt><dd>年42回（月3〜4回）・1回60分</dd></div>
+              <div><dt>曜日・時間</dt><dd class="tbd">［曜日・時間を入れる］</dd></div>
+              <div><dt>場所</dt><dd class="tbd">［教室の場所を入れる］</dd></div>
+            </dl>
+          </details>
+        </div>
+      </article>
+      <article class="a-ls-card is-online rv">
+        <div class="a-ls-ph"><img src="img/adult-window.jpg" alt="窓辺の机でペン字を書く大人" loading="lazy" style="object-position:80% 88%"><span class="a-ls-online">オンラインでも受講できます</span></div>
+        <div class="a-ls-body">
+          <p class="a-ls-tool">ペン・鉛筆</p>
+          <span class="a-ls-en">Pen</span><h3>ペン部</h3>
+          <p class="a-ls-catch">ふだんの字を、美しく。</p>
+          <p class="a-ls-txt">楷書と行書の基本から、手紙文、文学作品の一節まで。はじめは大きめの字から練習するので、久しぶりの方も無理なく始められます。</p>
+          <ul class="a-ls-tags"><li>段位まで</li></ul>
+          <dl class="a-ls-fee"><div><dt>教室</dt><dd>月5,500円</dd></div><div class="on"><dt>オンライン</dt><dd>月2回 3,500円<br>月4回 5,500円</dd></div></dl>
+          <details class="a-ls-more">
+            <summary>詳細を見る</summary>
+            <dl class="a-ls-detail">
+              <div class="sub">教室</div>
+              <div><dt>お稽古</dt><dd>年42回（月3〜4回）・1回60分</dd></div>
+              <div><dt>曜日・時間</dt><dd class="tbd">［曜日・時間を入れる］</dd></div>
+              <div><dt>場所</dt><dd class="tbd">［教室の場所を入れる］</dd></div>
+              <div class="sub on">オンライン</div>
+              <div><dt>添削</dt><dd>月2回 または 月4回</dd></div>
+              <div><dt>提出</dt><dd>好きな時間に書いて、写真で送る</dd></div>
+              <div><dt>返却</dt><dd class="tbd">［届いてから何日以内に返すか］</dd></div>
+              <div><dt>清書</dt><dd>郵送で受け付け、検定に出品（郵送料はご負担）</dd></div>
+            </dl>
+          </details>
+        </div>
+      </article>
+      <article class="a-ls-card rv">
+        <div class="a-ls-ph"><img src="img/adult-noshi.jpg" alt="祝儀袋の表書きを練習する大人" loading="lazy" style="object-position:center 90%"></div>
+        <div class="a-ls-body">
+          <p class="a-ls-tool">毛筆・筆ペン・ペン</p>
+          <span class="a-ls-en">Kurashi no Sho</span><h3>くらしの書</h3>
+          <p class="a-ls-catch">人前で書く字に、自信を。</p>
+          <p class="a-ls-txt">のし袋などの冠婚葬祭の表書き、手紙・はがき・年賀状の書き方と書式を学びます。色紙や短冊の作品づくりも楽しめます。</p>
+          <ul class="a-ls-tags"><li>実力認定試験あり</li></ul>
+          <dl class="a-ls-fee"><div><dt>教室</dt><dd>月5,500円</dd></div></dl>
+          <details class="a-ls-more">
+            <summary>詳細を見る</summary>
+            <dl class="a-ls-detail">
+              <div><dt>お稽古</dt><dd>年42回（月3〜4回）・1回60分</dd></div>
+              <div><dt>曜日・時間</dt><dd class="tbd">［曜日・時間を入れる］</dd></div>
+              <div><dt>場所</dt><dd class="tbd">［教室の場所を入れる］</dd></div>
+            </dl>
+          </details>
+        </div>
+      </article>
+    </div>
+    <div class="a-ls-trial rv">
+      <p><span>まずは、お試し添削</span><b>1回500円</b><small>オンライン ペン部の添削を、1回だけ受けられます。</small></p>
+      <a class="btn btn-p" href="#contact">お試し添削を申し込む</a>
+    </div>
+  </div>
+</section>
+
+<!-- KOKORO：字がととのうと、心もととのう（2026-11-26） -->
+<section class="forwho" id="kokoro">
   <div class="wrap">
     <div class="rv">
-      <span class="en">For You</span>
-      <h2 class="h2">こんな方を<br>お待ちしています</h2>
+      <h2 class="h2">字がととのうと、<br>心もととのう。</h2>
     </div>
-    <ul class="fw-list">
-      <li class="rv"><span class="fw-key">もう一度</span>子どものころ習っていて、もう一度はじめたい<small>ブランクがあっても大丈夫。手はちゃんと覚えています。</small></li>
-      <li class="rv"><span class="fw-key">人前で書く字</span>自分の字に、ちょっと自信がない<small>のし袋、手紙、書類の名前。人前で書く字を整えたい方。</small></li>
-      <li class="rv"><span class="fw-key">一生の趣味</span>趣味として、長く続けられることを探している<small>何歳からでも、一生続けられる習いごと。毎月の課題が、続ける張り合いになります。</small></li>
-      <li class="rv"><span class="fw-key">自分の時間</span>忙しい毎日に、自分と向き合う時間がほしい<small>文字を書く時間は、心がしずかに整う時間です。</small></li>
-      <li class="rv"><span class="fw-key">自分の字</span>お手本で基本を身につけ、その先の「自分の好きな字」を目指したい<small>正しい形を土台に、あなたらしい字を見つける力を育てます。</small></li>
-      <li class="rv"><span class="fw-key">段位・師範</span>ゆくゆくは段や師範もめざしてみたい<small>日本習字の検定で、段位・師範まで道がつながっています。</small></li>
-    </ul>
-    <p class="fw-not rv">書くこと自体を楽しみながら、少しずつ上達していきたい方に向いている教室です。</p>
+    <div class="a-kk">
+      <div class="a-kk-item rv">
+        <span class="a-kk-no">01</span>
+        <h3>比べるのは、<br>昨日の自分</h3>
+        <p>「前より、この線が好きになった」。比べる相手は、ほかの人ではなく、昨日の自分です。</p>
+      </div>
+      <div class="a-kk-item rv">
+        <span class="a-kk-no">02</span>
+        <h3>いざというとき、<br>筆が持てる</h3>
+        <p>のし袋、芳名帳、お礼の一筆。人前で書く場面でも、手が止まらなくなります。</p>
+      </div>
+      <div class="a-kk-item rv">
+        <span class="a-kk-no">03</span>
+        <h3>日本の伝統文化を、<br>暮らしの中に</h3>
+        <!-- ユネスコ：12/5ごろの最終決定までは「審議されています」。決定後は「書道は、2026年にユネスコ無形文化遺産に登録されました。」に差しかえ -->
+        <p>書道は、ユネスコ無形文化遺産への登録が審議されています。特別な日だけでなく、ふだんの暮らしの中で楽しめる文化です。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BRIDGE（心もととのう → 教え方 のつなぎ 2026-11-26） -->
+<section class="a-bridge" aria-label="教え方へ">
+  <div class="a-bridge-bg" role="img" aria-label="墨をふくませた筆と硯"></div>
+  <div class="wrap a-bridge-in rv">
+    <p class="a-bridge-main">同じ「水」の字でも、<br>書くたびに、学ぶことが違う。</p>
+    <p class="a-bridge-sub"><span style="display:inline-block">今の自分には何が必要で、</span><span style="display:inline-block">何を意識して、どう書くか。</span><br>終わりのない稽古だから、ずっと楽しめる。</p>
+    <a class="a-bridge-down" href="#reason">にじいろ教室のお稽古を見る</a>
+    <a class="a-bridge-cta" href="#contact">お試し添削（500円）はこちら</a>
   </div>
 </section>
 
@@ -340,74 +704,37 @@
   </div>
 </section>
 
-<!-- COURSE -->
-<section class="course" id="course">
-  <div class="wrap">
-    <div class="course-head rv">
-      <div>
-        <span class="en">Course</span>
-        <h2 class="h2">大人のコース</h2>
-      </div>
-      <p class="lead" style="margin: 0; max-width: 26em">高校生・大人の部では、漢字部・ペン部・くらしの書の3つを多治見の教室で学べます。ペン部は、ご自宅からオンラインでも受講できます。</p>
-    </div>
-
-    <article class="cfeat rv">
-      <div class="ph"><span>PHOTO｜ペン字のお手本と添削</span></div>
-      <div class="cbody">
-        <span class="tag" style="background: #D8F3F1; color: #075E5A">オンライン・全国から受講OK</span>
-        <h3>オンライン ペン部<br><span style="font-size: 18px; color: #7A6352">ペン字を、自宅で、自分のペースで</span></h3>
-        <p>日本習字の硬筆お手本で練習し、書いた字を写真で送ると、添削とアドバイスが返ってきます。清書は郵送で受け付けて、検定に出せます。</p>
-        <dl class="spec">
-          <dt>月4回</dt><dd>5,500円／月</dd>
-          <dt>月2回</dt><dd>3,500円／月</dd>
-          <dt>教材</dt><dd>日本習字 硬筆お手本</dd>
-        </dl>
-        <div style="display: flex; align-items: flex-end; justify-content: space-between; gap: 20px; margin-top: 28px; flex-wrap: wrap">
-          <div><div style="font-size: 13px; font-weight: 700; color: #7A6352">まずはお試し添削</div><div class="price">500<small>円／1回</small></div></div>
-          <a class="btn btn-p" href="#contact">お試しを申し込む<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-        </div>
-      </div>
-    </article>
-
-    <div class="csub">
-      <article class="ccard cb rv">
-        <div class="circ"></div>
-        <span class="tag" style="background: #19B5B0; color: #10302E">教室に通う</span>
-        <h3>漢字部・ペン部・くらしの書<br><span style="font-size: 17px; color: #E8DCCB">年42回（1回60分）</span></h3>
-        <p>筆の運びや姿勢を、講師が直接見ながらお伝えします。<b style="color: #FFC814">くらしの書</b>では、のし袋の表書きや、手紙・はがきの書き方と書式を学びます。お稽古日は、お問い合わせください。</p>
-        <div class="row">
-          <div class="price">5,500<small>円／月</small></div>
-          <a class="link" href="#contact" style="color: #FFC814">問い合わせる<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-        </div>
-      </article>
-      <article class="ccard cy rv">
-        <div class="circ"></div>
-        <span class="tag" style="background: #3B2517; color: #FFC814">単発で楽しむ</span>
-        <h3>イベント・ワークショップ<br><span style="font-size: 17px">まずは気軽に書いてみたい方へ</span></h3>
-        <p>季節の書き初めや、筆跡診断のワークショップなど、1回で参加できる会も開いています。日程はInstagramでお知らせします。</p>
-        <div class="row">
-          <span style="font-weight: 700">日程は随時お知らせ</span>
-          <a class="link" href="https://www.instagram.com/shukusin/" target="_blank" rel="noopener" style="color: #3B2517">Instagramを見る<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></a>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- FLOW -->
+<!-- HOW TO：お稽古の受け方（教室で／オンラインで 2026-11-26） -->
 <section class="year flow" id="flow">
   <div class="yk" aria-hidden="true">筆</div>
   <div class="wrap">
     <div class="rv">
-      <span class="en">Flow</span>
-      <h2 class="h2">オンライン添削の<br>すすめ方</h2>
-      <p class="lead">スマホがあれば、どこからでも始められます。</p>
+      <span class="en">How to Learn</span>
+      <h2 class="h2">お稽古の<br>受け方</h2>
     </div>
-    <div class="yrow">
-      <div class="ystep rv"><div class="ymark">1</div><h3>お手本が<br>届く</h3><p>日本習字の硬筆お手本をお届けします。ペンはふだん使いのもので大丈夫です。</p></div>
-      <div class="ystep rv"><div class="ymark">2</div><h3>書いて<br>写真を送る</h3><p>好きな時間に練習して、書いたものをスマホで撮って送ります。</p></div>
-      <div class="ystep rv"><div class="ymark">3</div><h3>添削と<br>アドバイス</h3><p>赤字の添削に、次に意識するポイントを添えてお返しします。</p></div>
-      <div class="ystep rv"><div class="ymark">4</div><h3>清書を出して<br>昇級</h3><p>いちばんよく書けた1枚を郵送。検定に出して、級が上がっていきます。</p></div>
+    <div class="a-howto-tabs rv" role="tablist" aria-label="お稽古の受け方">
+      <button type="button" role="tab" id="tab-cls" aria-controls="pn-cls" aria-selected="true">教室で</button>
+      <button type="button" role="tab" id="tab-onl" aria-controls="pn-onl" aria-selected="false">オンラインで<small>（ペン部）</small></button>
+    </div>
+    <div class="a-howto-panel" id="pn-cls" role="tabpanel" aria-labelledby="tab-cls">
+      <p class="lead">毎回、その方に合った課題から始めます。<br>教室で書くだけでも、おうちで練習したものを持ってきて添削を受けても、どちらでも大丈夫です。</p>
+      <div class="yrow">
+        <div class="ystep rv"><div class="ymark">1</div><h3>ウォーミング<br>アップ</h3></div>
+        <div class="ystep rv"><div class="ymark">2</div><h3>振り返りと<br>今日の課題</h3><p>前回のお稽古を振り返って、その方に合った課題を出します。筆の持ち方、線を引く練習、はねの練習、お手本の見方など、今のあなたに必要なことから始めます。</p></div>
+        <div class="ystep rv"><div class="ymark">3</div><h3>練習</h3><p>課題を意識しながら、くり返し書きます。</p></div>
+        <div class="ystep rv"><div class="ymark">4</div><h3>清書</h3><p>最後に、その日いちばんの一枚を書いて終わります。</p></div>
+        <div class="ystep rv"><div class="ymark">5</div><h3>月に1回<br>検定へ</h3><p>講師がよく書けた一枚を選んで出品し、級が上がっていきます。</p></div>
+      </div>
+      <p class="a-howto-note"><b>道具について</b>道具は、教室でそろえることをおすすめしています。筆や墨は、書きやすさが大きく変わる道具なので、はじめての方には講師が選んだものをご用意します。</p>
+    </div>
+    <div class="a-howto-panel on" id="pn-onl" role="tabpanel" aria-labelledby="tab-onl" hidden>
+      <p class="lead">スマホがあれば、どこからでも始められます。</p>
+      <div class="yrow">
+        <div class="ystep rv"><div class="ymark">1</div><h3>お手本が<br>届く</h3><p>日本習字の硬筆お手本をお届けします。ペンはふだん使いのもので大丈夫です。</p></div>
+        <div class="ystep rv"><div class="ymark">2</div><h3>書いて<br>写真を送る</h3><p>好きな時間に練習して、書いたものをスマホで撮って送ります。</p></div>
+        <div class="ystep rv"><div class="ymark">3</div><h3>添削と<br>アドバイス</h3><p>赤字の添削に、次に意識するポイントを添えてお返しします。</p></div>
+        <div class="ystep rv"><div class="ymark">4</div><h3>清書を出して<br>昇級</h3><p>いちばんよく書けた1枚を郵送。検定に出して、級が上がっていきます。</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -423,51 +750,33 @@
       <p class="lead">幼稚園のころから筆を持ち、書きつづけてきました。教室では小学生、小学校の放課後教室では低学年の子どもたちに教えています。ひとりひとり、つまずくところも伸びるところも違う。だから、その人に合った教え方をいつも考えています。大人の方とも、同じように一緒に考えながら、長く楽しめる時間をつくりたいと思っています。</p>
       <ul class="creds">
         <li>日本習字 師範</li>
-        <li>書導家（筆跡診断）</li>
         <li>小学校 放課後教室 書写講師</li>
-        <li>子どもの部 生徒20名を指導</li>
       </ul>
     </div>
   </div>
 </section>
 
-<!-- PRICE -->
-<section id="price" style="padding: 0 24px">
-  <div class="price-sec">
-    <div class="wrap">
-      <div class="rv">
-        <span class="en">Price</span>
-        <h2 class="h2">料金</h2>
-      </div>
-      <div class="ptable">
-        <div class="pbox rv">
-          <h3><i style="background: #19B5B0"></i>ペン部（オンライン添削）</h3>
-          <div class="prow"><span>月4回</span><span class="v">5,500<small>円／月</small></span></div>
-          <div class="prow"><span>月2回</span><span class="v">3,500<small>円／月</small></span></div>
-          <div class="prow"><span>お試し添削</span><span class="v">500<small>円／1回</small></span></div>
-          <p class="note">※ 清書の郵送料はご負担をお願いします。</p>
-        </div>
-        <div style="display: flex; flex-direction: column; gap: 32px">
-          <div class="pbox rv">
-            <h3><i style="background: #E23C80"></i>教室（漢字部・ペン部・くらしの書）</h3>
-            <div class="prow"><span>年42回・1回60分</span><span class="v">5,500<small>円／月</small></span></div>
-          </div>
-          <div class="pbox rv">
-            <h3><i style="background: #FFC814"></i>共通</h3>
-            <div class="prow"><span>入会金</span><span class="v">2,000<small>円</small></span></div>
-            <div class="prow"><span>お手本代（日本習字）</span><span class="v"><small style="margin:0 4px 0 0">月あたり</small>〜1,500<small>円</small></span></div>
-            <p class="note">※ お手本代は、入会した月から「9月まで」か「翌年3月まで」のどちらかをまとめてお支払いいただきます。</p>
-          </div>
-        </div>
-      </div>
-      <div class="trial rv">
-        <div>
-          <h3>まずは1回、添削を受けてみてください。</h3>
-          <p>お試し添削は500円。教え方が自分に合うかどうか、確かめてから決めていただけます。</p>
-        </div>
-        <a class="btn btn-p" href="#contact">お試し添削を申し込む</a>
-      </div>
+<!-- EVENTS：単発の講座・イベント（2026-11-26 枠のみ） -->
+<section class="a-ev" id="events">
+  <div class="wrap">
+    <div class="rv">
+      <span class="en">Events</span>
+      <h2 class="h2">単発の<br>講座・イベント</h2>
+      <p class="a-kk-lead">1回から参加できる講座です。月謝のお稽古とは別に、気軽に書く時間としてどうぞ。</p>
     </div>
+    <div class="a-ev-grid">
+      <article class="a-ev-card rv">
+        <ul class="a-ev-tags"><li class="tbd">［教室／オンライン］</li></ul>
+        <h3>論語を書く<span class="tbd" style="font-size:14px">［講座名を入れる］</span></h3>
+        <p class="tbd">［内容を入れる：論語30をなぞり書き、毎朝10分など。回数・日程・料金］</p>
+      </article>
+      <article class="a-ev-card rv">
+        <ul class="a-ev-tags"><li class="tbd">［教室／オンライン］</li></ul>
+        <h3>写経<span class="tbd" style="font-size:14px">［講座名を入れる］</span></h3>
+        <p class="tbd">［内容を入れる：回数・日程・料金］</p>
+      </article>
+    </div>
+    <p class="a-ev-more rv">日程は<a href="https://www.instagram.com/shukusin/" target="_blank" rel="noopener">Instagram</a>でお知らせします。</p>
   </div>
 </section>
 
@@ -482,7 +791,11 @@
     <div class="rv">
       <details class="fitem" open>
         <summary class="fq"><span class="q">Q</span><span>まったくの初心者でも大丈夫ですか？</span><span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
-        <p class="fa">大丈夫です。お手本はレベルに合わせて進むので、はじめての方も、昔習っていた方も、それぞれのところから始められます。</p>
+        <p class="fa">大丈夫です。お手本はレベルに合わせて進むので、はじめての方も、ブランクがある方も、それぞれのところから始められます。まずはお手本で、基本の形から練習します。</p>
+      </details>
+      <details class="fitem">
+        <summary class="fq"><span class="q">Q</span><span>続けられるか心配です。</span><span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
+        <p class="fa">オンラインは月2回から、自分のペースで続けられます。練習は好きな時間にできて、書いたら写真を送るだけです。毎月の課題と昇級が、続ける張り合いになります。</p>
       </details>
       <details class="fitem">
         <summary class="fq"><span class="q">Q</span><span>遠方でもオンラインで受講できますか？</span><span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
@@ -490,11 +803,15 @@
       </details>
       <details class="fitem">
         <summary class="fq"><span class="q">Q</span><span>何を用意すればいいですか？</span><span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
-        <p class="fa">ふだん使いのペンと、写真を撮れるスマホがあれば始められます。お手本は日本習字のものをお届けします。</p>
+        <p class="fa">教室のお稽古は、筆や墨などの道具が必要です。オンラインのペン部は、ふだん使いのペンと、写真を撮れるスマホがあれば始められます。お手本は日本習字のものをお届けします。</p>
+      </details>
+      <details class="fitem">
+        <summary class="fq"><span class="q">Q</span><span>道具は持っていなくても大丈夫ですか？</span><span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
+        <p class="fa">大丈夫です。教室でおすすめの道具をご用意できます。お持ちの道具がある方は、一度見せてください。</p>
       </details>
       <details class="fitem">
         <summary class="fq"><span class="q">Q</span><span>月謝のほかにかかる費用はありますか？</span><span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
-        <p class="fa">入会金2,000円と、日本習字のお手本代（月あたり1,500円まで）がかかります。お手本代は「9月まで」か「翌年3月まで」のどちらかをまとめてお支払いいただきます。</p>
+        <p class="fa">お試し添削は1回500円です。入会後は、月謝のほかに入会金2,000円と、日本習字のお手本代（月あたり1,500円まで）がかかります。お手本代は「9月まで」か「翌年3月まで」のどちらかをまとめてお支払いいただきます。</p>
       </details>
       <details class="fitem">
         <summary class="fq"><span class="q">Q</span><span>毛筆も習えますか？</span><span class="pm"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></span></summary>
@@ -516,6 +833,7 @@
         <span class="en">Contact</span>
         <h2 class="bigcta">まずは、<br>1枚から。</h2>
         <p class="lead" style="color: rgba(255,255,255,.92)">お試し添削（500円）で、教え方が合うかどうかを確かめてください。ご質問だけでも、お気軽にどうぞ。</p>
+        <p class="a-event">1回で参加できる講座・イベントは<a href="#events">こちら</a>。</p>
       </div>
       <div class="form rv" aria-label="大人の部 お申し込み">
         <div style="font-weight: 900; font-size: 20px">お試し添削・お問い合わせ</div>
@@ -541,8 +859,8 @@
         </div>
       </div>
       <nav aria-label="フッターメニュー">
-        <a href="index.html">教室トップ</a><a href="#forwho">こんな方に</a><a href="#reason">教え方</a>
-        <a href="#course">コース</a><a href="#flow">添削の流れ</a><a href="#price">料金</a>
+        <a href="index.html">教室トップ</a><a href="#lessons">お稽古と月謝</a><a href="#kokoro">心もととのう</a>
+        <a href="#reason">教え方</a><a href="#flow">受け方</a><a href="#events">イベント</a>
         <a href="#teacher">講師紹介</a><a href="#faq">よくある質問</a><a href="#contact">お問い合わせ</a>
       </nav>
     </div>
@@ -555,6 +873,41 @@
 const b=document.getElementById('burger'),d=document.getElementById('drawer');
 b.addEventListener('click',()=>{const o=d.hidden;d.hidden=!o;b.setAttribute('aria-expanded',o);});
 d.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{d.hidden=true;b.setAttribute('aria-expanded',false);}));
+</script>
+<script>
+/* お稽古カード：パララックスと面の濃さ（書遊を参考） */
+(function(){
+  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  var cards=[].slice.call(document.querySelectorAll('.a-ls-card'));
+  if(!cards.length) return;
+  cards.forEach(function(c){c.classList.add('pre')});
+  var ticking=false;
+  function update(){
+    var vh=window.innerHeight;
+    cards.forEach(function(c){
+      var r=c.getBoundingClientRect();
+      var p=(r.top+r.height/2-vh/2)/vh; /* -1〜1 中央で0 */
+      if(p>1.2||p<-1.2) return;
+      var img=c.querySelector('.a-ls-ph img'), body=c.querySelector('.a-ls-body');
+      if(img) img.style.transform='translateY('+(p*-4)+'%)';
+      if(body && window.innerWidth>760) body.style.transform='translateY('+(p*40)+'px)';
+      c.classList.toggle('pre', p>0.45);
+    });
+    ticking=false;
+  }
+  window.addEventListener('scroll',function(){if(!ticking){requestAnimationFrame(update);ticking=true}},{passive:true});
+  window.addEventListener('resize',update);
+  update();
+})();
+</script>
+<script>
+/* お稽古の受け方：教室で／オンラインで のタブ */
+(function(){
+  var tabs=[].slice.call(document.querySelectorAll('.a-howto-tabs [role=tab]'));
+  tabs.forEach(function(t){t.addEventListener('click',function(){
+    tabs.forEach(function(x){var on=x===t;x.setAttribute('aria-selected',on);document.getElementById(x.getAttribute('aria-controls')).hidden=!on;});
+  })});
+})();
 </script>
 </body>
 </html>
